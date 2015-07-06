@@ -48,8 +48,8 @@ li.dropdown.open > .dropdown-toggle,
 .usermenu .moodle-actionmenu.show
 {
 	/* moodle hat gray */
-	background-color:#393b3b !important;
-	/* background-color:#00679b !important; */
+	/* background-color:#3b3b3b !important; */
+	background-color:#00679b !important;
 }
 
 
@@ -94,7 +94,7 @@ Hide language menu
 {
 	text-shadow: none !important;
 	color: #fee924 !important;
-	font-weight:bold !important;
+	text-shadow: 1px 1px 2px #3b3b3b !important;
 }
 
 #logoimg {
@@ -103,6 +103,11 @@ Hide language menu
 	margin-top:-13px !important;
 	margin-bottom:-10px !important;
 }
+
+/**************************************************
+Styling for contents (not Banner)
+***************************************************/
+
 
 #maincontent + h1,
 #maincontent + h2,
@@ -155,3 +160,6 @@ a {
 	color:inherit !important;
 }
 
+.error {
+	color:#e75020 !important;
+}
