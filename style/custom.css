@@ -1,0 +1,157 @@
+/* Custom CSS
+-------------------------*/
+div.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dir-rtl div.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]
+
+
+.navbar-inner {
+	background-color:rgb(231,80,32) !important;
+	border-color:rgb(231,80,32) !important;
+	padding-top:5px !important;
+	background-image: none;
+	text-align:center;
+}
+
+.nav .dropdown-menu, .menu {
+	background-color:rgb(231,80,32) !important;
+}
+.usermenu .moodle-actionmenu.show .menu:after {
+    border-bottom-color:rgb(231,80,32) !important;
+}
+
+#action-menu-0-menubar 
+{
+	margin-top:-5px !important;
+	padding-top:5px !important;
+	margin-bottom:-7px !important;
+	padding-bottom:7px !important;
+}
+
+li.dropdown.open > .dropdown-toggle,
+.usermenu .moodle-actionmenu.show
+{
+	/* moodle hat gray */
+	background-color:#393b3b !important;
+	/* background-color:#00679b !important; */
+}
+
+
+/**************************************************
+Theming of svg icons 
+***************************************************/
+
+/* use if svg is inline
+
+#action-menu-0-menu .icon {
+	color: #fee924 !important;
+}
+#action-menu-0-menu .iconsmall svg {
+	fill: currentColor !important;
+}
+*/
+
+#action-menu-0-menu .icon {
+	vertical-align:middle;
+}
+.iconsmall {
+	background-color:#fee924 !important;
+	padding:2px !important;
+}
+
+/**************************************************
+Hide language menu
+***************************************************/
+
+.langmenu, .btn-navbar {
+	display:none !important;
+}
+
+.caret {
+    border-top-color: #fee924 !important;
+}
+
+.nav a,
+.nav .dropdown-toggle,
+.usermenu a,
+.usermenu .login
+{
+	text-shadow: none !important;
+	color: #fee924 !important;
+	font-weight:bold !important;
+}
+
+#logoimg {
+	width: 162px !important;
+	height: 50px !important;
+	margin-top:-13px !important;
+	margin-bottom:-10px !important;
+}
+
+#maincontent + h1,
+#maincontent + h2,
+#maincontent + h3,
+#maincontent + h4,
+#maincontent + h5,
+#maincontent + h6,
+div > h1:first-child,
+div > h2:first-child,
+div > h3:first-child,
+div > h4:first-child,
+div > h5:first-child,
+div > h6:first-child
+{
+	margin-top:0px !important;
+}
+
+dt {
+	font-weight:bold;
+}
+code {
+	background-color: #F7F7F9;
+	border: 1px solid #E1E1E8;
+	padding: 3px 4px;
+}
+code, pre {
+	border-radius: 3px 3px 3px 3px;
+	color: #444444;
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	padding: 0 3px 2px;
+}
+
+li.label h3:first-of-type { /* gives extra space before label headings */
+  padding-top: 1em;
+}
+
+body {
+	background-color:#a7c8fd !important;
+	color:#6d45f2 !important;
+}
+a {
+	color:#380ec3 !important;
+}
+.block {
+    background-color: #e6eefb !important;
+    border: 1px solid #8cb7fd !important;
+}
+
+.block .header h2 {
+	color:inherit !important;
+}
+
