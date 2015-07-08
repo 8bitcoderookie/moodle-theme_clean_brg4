@@ -8,7 +8,7 @@ This is a customised clean (bootstrapbase) theme for Moodle 2.9 and up (should w
 
 2. (Re)login as Moodle admin triggers your Moodle site to begin the install 'Plugins Check'.
 
-3. Navigate to _Administration > Site Administration > Appearance > Themes > Theme selector_. For _device type: Default_ click <kbd>Change theme</kbd> and select *Clean_BRG4* from the list of available themes.
+3. Navigate to _Administration > Site Administration > Appearance > Themes > Theme selector_. For _default device type_ click <kbd>Change theme</kbd> and select *Clean_BRG4* from the list of available themes.
 
 ## Theme enhancement / feature list
 
@@ -28,6 +28,6 @@ This is a customised clean (bootstrapbase) theme for Moodle 2.9 and up (should w
 - assignment: preset file upload limit to less than maximum.
 - Profile Links lead to edit Profile page directly
 
-## Referenzes
+## References
 
 - [Clean theme - MoodleDocs](http://docs.moodle.org/dev/Clean_theme)
