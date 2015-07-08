@@ -49,7 +49,54 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
-    <?php echo $OUTPUT->standard_head_html() ?>
+
+	<?php 
+		$PAGE->requires->js('/theme/clean_brg4/javascript/base.js',false);
+		
+		if ($PAGE->bodyid == 'page-login-index') {  // Login Seite
+			$PAGE->requires->js('/theme/clean_brg4/javascript/loginInsertUserName.js',false);
+		}
+		else {
+			$PAGE->requires->js('/theme/clean_brg4/javascript/logonAccessKeys.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/replaceViewProfileLink.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/markDownAsDefaultTextAreaInputFormat.js',false);
+		}
+		if ($PAGE->bodyid == 'page-course-view-topics') { // Kursseite
+			$PAGE->requires->js('/theme/clean_brg4/javascript/editAccessKeys.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/jumpToCurrentTopic.js',false);
+		} 
+		else if ($PAGE->bodyid == 'page-course-edit') {   // Neuen Kurs anlegen
+			$PAGE->requires->js('/theme/clean_brg4/javascript/Array.map.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/String.trim.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/schuljahr.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/dom.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/neuenKursAnlegen.js',false);
+		} 
+		else if ($PAGE->bodyid == 'page-course-editcategory') { // Neue Kurskategorie anlegen
+			$PAGE->requires->js('/theme/clean_brg4/javascript/String.trim.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/schuljahr.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/dom.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/kursbereichAnlegen.js',false);
+		} 
+		else if ($PAGE->bodyid == 'page-site-index') {  // frontpage
+			$PAGE->requires->js('/theme/clean_brg4/javascript/collapseOldCourseCategories.js',false);
+		} 
+		else if ($PAGE->bodyid == 'page-course-editsection') {  // edit course section properties
+			$PAGE->requires->js('/theme/clean_brg4/javascript/customSectionName.js',false);
+		} 
+		else if ($PAGE->bodyid == 'page-course-request') {  // edit course section properties
+			$PAGE->requires->js('/theme/clean_brg4/javascript/courseRequest.js',false);
+		} 
+		else if ($PAGE->bodyid == 'page-mod-assign-mod') {  // edit assignment properties
+			$PAGE->requires->js('/theme/clean_brg4/javascript/syncCutOffDate.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/submissionCommentsDefaultChecked.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/disableDefaultEmailNotification.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/dom.js',false);
+			$PAGE->requires->js('/theme/clean_brg4/javascript/setAssignmentUploadSizeLimit.js',false);
+		} 
+	?>	
+	
+	<?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -60,7 +107,7 @@ echo $OUTPUT->doctype() ?>
 <header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
-            <a class="brand" href="<?php echo $CFG->wwwroot;?>"><img id="logoimg" src="<?php echo $OUTPUT->pix_url('logo_188x58', 'theme')?>" width="201" height="55" alt="BRG4 Moodle" title="BRG4 Moodle"></a>
+            <a class="brand" href="<?php echo $CFG->wwwroot;?>"><img id="logoimg" src="<?php echo $OUTPUT->pix_url('logo', 'theme')?>" width="201" height="55" alt="BRG4 Moodle" title="BRG4 Moodle"></a>
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>

@@ -79,7 +79,7 @@ Theming of svg icons
 Hide language menu
 ***************************************************/
 
-.langmenu, .btn-navbar {
+.langmenu, .btn-navbar, .sitelink {
 	display:none !important;
 }
 
@@ -92,13 +92,13 @@ Hide language menu
 .usermenu a,
 .usermenu .login
 {
-	text-shadow: none !important;
 	color: #fee924 !important;
 	text-shadow: 1px 1px 2px #3b3b3b !important;
+	font-weight:bold !important;
 }
 
 #logoimg {
-	width: 162px !important;
+	width: 168px !important;
 	height: 50px !important;
 	margin-top:-13px !important;
 	margin-bottom:-10px !important;
