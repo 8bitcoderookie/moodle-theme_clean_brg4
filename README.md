@@ -1,6 +1,6 @@
 # moodle-theme_clean_brg4
 
-This is a customised clean (bootstrapbase) theme for Moodle 2.9 and up (should work with 2.5-2.8 but was not tested). It is the successor of our non-bootstrap-based Theme [moodle-theme_brg4](https://github.com/8bitcoderookie/moodle-theme_brg4)
+This is a customised clean (bootstrapbase) theme for Moodle 2.9 and up (should work with 2.5-2.8, but was not tested). It is the successor of our non-bootstrap-based Theme [moodle-theme_brg4](https://github.com/8bitcoderookie/moodle-theme_brg4)
 
 ![Theme Preview Screen](pix/screenshot.jpg)
 

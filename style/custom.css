@@ -21,10 +21,17 @@ div.logo {
 [[setting:customcss]]
 
 
+
+/* THEME BRG4 CSS SETTINGS
+-------------------------*/
+
+/* Banner & Top Navigation
+-------------------------*/
+
 .navbar-inner {
 	background-color:rgb(231,80,32) !important;
 	border-color:rgb(231,80,32) !important;
-	padding-top:5px !important;
+	border-width:0px !important;
 	background-image: none;
 	text-align:center;
 }
@@ -38,8 +45,8 @@ div.logo {
 
 #action-menu-0-menubar 
 {
-	margin-top:-5px !important;
-	padding-top:5px !important;
+	margin-top:-7px !important;
+	padding-top:7px !important;
 	margin-bottom:-7px !important;
 	padding-bottom:7px !important;
 }
@@ -52,6 +59,31 @@ li.dropdown.open > .dropdown-toggle,
 	background-color:#00679b !important;
 }
 
+nav .caret {
+    border-top-color: #fee924 !important;
+}
+.caret {
+    border-top-color: #380ec3 !important;
+}
+
+.nav a,
+.nav .dropdown-toggle,
+.usermenu a,
+.usermenu .login
+{
+	color: #fee924 !important;
+	text-shadow: 1px 1px 2px #3b3b3b !important;
+	font-weight:bold !important;
+}
+
+.usermenu {
+	margin-top:7px;
+}
+
+a.brand {
+	margin:0px !important;
+	padding:0px !important;
+}
 
 /**************************************************
 Theming of svg icons 
@@ -70,7 +102,7 @@ Theming of svg icons
 #action-menu-0-menu .icon {
 	vertical-align:middle;
 }
-.iconsmall {
+#action-menu-0-menu .iconsmall {
 	background-color:#fee924 !important;
 	padding:2px !important;
 }
@@ -81,27 +113,6 @@ Hide language menu
 
 .langmenu, .btn-navbar, .sitelink {
 	display:none !important;
-}
-
-.caret {
-    border-top-color: #fee924 !important;
-}
-
-.nav a,
-.nav .dropdown-toggle,
-.usermenu a,
-.usermenu .login
-{
-	color: #fee924 !important;
-	text-shadow: 1px 1px 2px #3b3b3b !important;
-	font-weight:bold !important;
-}
-
-#logoimg {
-	width: 168px !important;
-	height: 50px !important;
-	margin-top:-13px !important;
-	margin-bottom:-10px !important;
 }
 
 /**************************************************
@@ -151,9 +162,17 @@ body {
 a {
 	color:#380ec3 !important;
 }
+
+.section,
+.breadcrumb,
 .block {
     background-color: #e6eefb !important;
     border: 1px solid #8cb7fd !important;
+}
+
+.section .section {
+    background-color: transparent !important;
+    border-width:0px !important;
 }
 
 .block .header h2 {
@@ -161,5 +180,10 @@ a {
 }
 
 .error {
-	color:#e75020 !important;
+	color:#fee924 !important;
+	background-color:#e75020 !important;
+}
+
+#fgroup_id_buttonar {
+	background-color: transparent !important;
 }
