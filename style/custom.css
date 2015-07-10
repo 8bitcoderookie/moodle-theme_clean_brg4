@@ -36,10 +36,10 @@ div.logo {
 	text-align:center;
 }
 
-.nav .dropdown-menu, .menu {
+nav .dropdown-menu, nav .menu {
 	background-color:rgb(231,80,32) !important;
 }
-.usermenu .moodle-actionmenu.show .menu:after {
+nav .usermenu .moodle-actionmenu.show .menu:after {
     border-bottom-color:rgb(231,80,32) !important;
 }
 
@@ -51,8 +51,8 @@ div.logo {
 	padding-bottom:7px !important;
 }
 
-li.dropdown.open > .dropdown-toggle,
-.usermenu .moodle-actionmenu.show
+nav li.dropdown.open > .dropdown-toggle,
+nav .usermenu .moodle-actionmenu.show
 {
 	/* moodle hat gray */
 	/* background-color:#3b3b3b !important; */
@@ -206,4 +206,8 @@ a {
 }
 .form-description {
 	color:#6d45f2 !important;
+}
+
+a.menu-action:hover {
+    background-color: #dae6fb !important;
 }
