@@ -193,7 +193,9 @@ a {
 	background-color:#e75020 !important;
 }
 
-#fgroup_id_buttonar {
+#fgroup_id_buttonar,
+.buttons
+{
 	background-color: transparent !important;
 }
 
