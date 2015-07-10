@@ -196,6 +196,8 @@ a {
 	background-color: transparent !important;
 }
 
+.form-shortname,
+.form-defaultinfo,
 .dimmed {
 	color:#9579f2 !important;
 }
