@@ -159,6 +159,7 @@ body {
 	background-color:#a7c8fd !important;
 	color:#6d45f2 !important;
 }
+
 a {
 	color:#380ec3 !important;
 }
@@ -200,4 +201,7 @@ a {
 .form-defaultinfo,
 .dimmed {
 	color:#9579f2 !important;
+}
+.form-description {
+	color:#6d45f2 !important;
 }
