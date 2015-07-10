@@ -195,3 +195,7 @@ a {
 #fgroup_id_buttonar {
 	background-color: transparent !important;
 }
+
+.dimmed {
+	color:#9579f2 !important;
+}
