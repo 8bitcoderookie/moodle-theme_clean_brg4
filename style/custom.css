@@ -164,10 +164,17 @@ a {
 }
 
 .section,
+.course_category_tree .category > .info,
+.courses .coursebox,
+.coursebox,
 .breadcrumb,
 .block {
     background-color: #e6eefb !important;
     border: 1px solid #8cb7fd !important;
+}
+
+.courses .coursebox.even {
+    background-color: transparent !important;
 }
 
 .section .section {
