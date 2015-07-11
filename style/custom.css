@@ -197,6 +197,11 @@ a {
 	font-weight:bold;
 }
 
+table#form td.submit,
+.form-buttons, 
+#fitem_id_submitbutton, 
+.fp-content-center form + div, 
+div.backup-section + form, 
 #fgroup_id_buttonar,
 .buttons
 {
