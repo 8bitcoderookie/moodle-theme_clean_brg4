@@ -102,7 +102,11 @@ Theming of svg icons
 #action-menu-0-menu .icon {
 	vertical-align:middle;
 }
-#action-menu-0-menu .iconsmall {
+
+.error .icon,
+#action-menu-0-menu .icon,
+#action-menu-0-menu .iconsmall
+{
 	background-color:#fee924 !important;
 	padding:2px !important;
 }
