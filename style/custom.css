@@ -175,7 +175,9 @@ a {
 }
 
 
-.courses .coursebox.even {
+.courses .coursebox.even,
+.r1
+{
     background-color: #dae6fb !important;
 }
 
@@ -191,6 +193,8 @@ a {
 .error {
 	color:#fee924 !important;
 	background-color:#e75020 !important;
+	padding:0.5em;
+	font-weight:bold;
 }
 
 #fgroup_id_buttonar,
