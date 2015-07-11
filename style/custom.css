@@ -111,7 +111,11 @@ Theming of svg icons
 Hide language menu
 ***************************************************/
 
-.langmenu, .btn-navbar, .sitelink {
+.langmenu, 
+.btn-navbar, 
+.sitelink, 
+.page-header-headings
+{
 	display:none !important;
 }
 
@@ -220,3 +224,8 @@ div.backup-section + form,
 a.menu-action:hover {
     background-color: #dae6fb !important;
 }
+
+#adminsettings h3 {
+	color:#6d45f2 !important;
+}
+
