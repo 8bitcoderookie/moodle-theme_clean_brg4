@@ -43,7 +43,7 @@ nav .usermenu .moodle-actionmenu.show .menu:after {
     border-bottom-color:rgb(231,80,32) !important;
 }
 
-#action-menu-0-menubar 
+#action-menu-0-menubar
 {
 	margin-top:-7px !important;
 	padding-top:7px !important;
@@ -86,7 +86,7 @@ a.brand {
 }
 
 /**************************************************
-Theming of svg icons 
+Theming of svg icons
 ***************************************************/
 
 /* use if svg is inline
@@ -114,9 +114,9 @@ Theming of svg icons
 Hide language menu
 ***************************************************/
 
-.langmenu, 
-.btn-navbar, 
-.sitelink, 
+.langmenu,
+.btn-navbar,
+.sitelink,
 .page-header-headings
 {
 	display:none !important;
@@ -141,6 +141,11 @@ div > h5:first-child,
 div > h6:first-child
 {
 	margin-top:0px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 dt {
@@ -205,10 +210,10 @@ a {
 }
 
 table#form td.submit,
-.form-buttons, 
-#fitem_id_submitbutton, 
-.fp-content-center form + div, 
-div.backup-section + form, 
+.form-buttons,
+#fitem_id_submitbutton,
+.fp-content-center form + div,
+div.backup-section + form,
 #fgroup_id_buttonar,
 .buttons
 {
@@ -231,4 +236,3 @@ a.menu-action:hover {
 #adminsettings h3 {
 	color:#6d45f2 !important;
 }
-
