@@ -49,6 +49,13 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
+	<script type="text/javascript">
+		var mdl_user = {};
+		var mdl_user.firstname = "<?php echo $USER->firstname ?>";
+		var mdl_user.lastname = "<?php echo $USER->lastname ?>";
+		var mdl_user.id = "<?php echo $USER->id ?>";
+		var mdl_user.email = "<?php echo $USER->email ?>";
+	</script>
 
 	<?php 
 		$PAGE->requires->js('/theme/clean_brg4/javascript/base.js',false);
