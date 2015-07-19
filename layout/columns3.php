@@ -49,13 +49,6 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
-	<script type="text/javascript">
-		var mdl_user = {};
-		var mdl_user.firstname = "<?php echo $USER->firstname ?>";
-		var mdl_user.lastname = "<?php echo $USER->lastname ?>";
-		var mdl_user.id = "<?php echo $USER->id ?>";
-		var mdl_user.email = "<?php echo $USER->email ?>";
-	</script>
 
 	<?php 
 		$PAGE->requires->js('/theme/clean_brg4/javascript/base.js',false);
@@ -104,6 +97,12 @@ echo $OUTPUT->doctype() ?>
 	?>	
 	
 	<?php echo $OUTPUT->standard_head_html() ?>
+	<script type="text/javascript">
+		M.mdl_user_firstname = "<?php echo $USER->firstname ?>";
+		M.mdl_user_lastname = "<?php echo $USER->lastname ?>";
+		M.mdl_user_id = "<?php echo $USER->id ?>";
+		M.mdl_user_email = "<?php echo $USER->email ?>";
+	</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
