@@ -92,6 +92,8 @@ echo $OUTPUT->doctype() ?>
 		M.mdl_user_lastname = "<?php echo $USER->lastname ?>";
 		M.mdl_user_id = "<?php echo $USER->id ?>";
 		M.mdl_user_email = "<?php echo $USER->email ?>";
+		// dont rely on the following value in your scripts; this can easily spoofed!!!
+		M.mdl_user_siteadmin = "<?php echo is_siteadmin(); ?>";
 	</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
