@@ -66,8 +66,8 @@ nav .caret {
     border-top-color: #380ec3 !important;
 }
 
-.nav a,
-.nav .dropdown-toggle,
+.navbar-inner a,
+.navbar-inner .dropdown-toggle,
 .usermenu a,
 .usermenu .login
 {
