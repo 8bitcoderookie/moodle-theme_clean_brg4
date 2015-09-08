@@ -225,7 +225,7 @@ div.backup-section + form,
 .dimmed {
 	color:#9579f2 !important;
 }
-.form-description {
+.form-description, legend {
 	color:#6d45f2 !important;
 }
 
@@ -236,3 +236,8 @@ a.menu-action:hover {
 #adminsettings h3 {
 	color:#6d45f2 !important;
 }
+
+#newmessageoverlay {
+	background-color: #fcf290;
+}
+
