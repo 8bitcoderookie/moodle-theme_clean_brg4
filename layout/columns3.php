@@ -99,6 +99,7 @@ echo $OUTPUT->doctype() ?>
 	<?php echo $OUTPUT->standard_head_html() ?>
 	<script type="text/javascript">
 		// dont rely on these the following values; this can easily spoofed!!!
+		M.mdl_user_id = "<?php echo $USER->id ?>";
 		M.mdl_user_firstname = "<?php echo $USER->firstname ?>";
 		M.mdl_user_lastname = "<?php echo $USER->lastname ?>";
 		M.mdl_user_siteadmin = <?php if (is_siteadmin()) echo 'true'; else echo 'false' ; ?>;
