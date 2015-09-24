@@ -176,6 +176,7 @@ a {
 	color:#380ec3 !important;
 }
 
+.single-section,
 .section,
 .course_category_tree .category > .info,
 .courses .coursebox,
@@ -241,3 +242,7 @@ a.menu-action:hover {
 	background-color: #fcf290;
 }
 
+
+content ul, content ol, content dl {
+    margin-bottom: 10px;
+}
