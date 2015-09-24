@@ -90,8 +90,8 @@ echo $OUTPUT->doctype() ?>
 	<script type="text/javascript">
 		// dont rely on these the following values; this can easily spoofed!!!
 		M.mdl_user_id = "<?php echo $USER->id ?>";
-		M.mdl_user_firstname = "<?php echo $USER->firstname ?>";
-		M.mdl_user_lastname = "<?php echo $USER->lastname ?>";
+		M.mdl_user_firstname = "<?php echo isset($USER->firstname) ? $USER->firstname : ''; ?>";
+		M.mdl_user_lastname = "<?php echo isset($USER->lastname) ? $USER->lastname : ''; ?>";
 		M.mdl_user_siteadmin = <?php if (is_siteadmin()) echo 'true'; else echo 'false' ; ?>;
 	</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
