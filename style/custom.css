@@ -242,6 +242,9 @@ a.menu-action:hover {
 	background-color: #fcf290;
 }
 
+ul.topics li.current {
+  background-color: #F1F0C4 !important;;
+}
 
 content ul, content ol, content dl {
     margin-bottom: 10px;
