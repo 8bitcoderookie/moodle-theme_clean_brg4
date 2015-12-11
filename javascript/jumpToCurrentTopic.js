@@ -36,12 +36,16 @@ YUI().use('node', function (Y) {
 		end_index = id_str.indexOf('&');
 		var id_str = id_str.substring(0,end_index);
 
-		console.log('temp '+id_str);
 		var option_course_main_page = Y.one('option[value="/course/view.php?id='+id_str+'"]');
 		if (option_course_main_page) {
 			option_course_main_page.set('value', option_course_main_page.get('value')+'&section=0');
-			console.log('option found');
 		}
+
+		var links_course_main_page = Y.one('a[href$="/course/view.php?id='+id_str+'"]');
+		if (links_course_main_page) {
+			links_course_main_page.set('href', links_course_main_page.get('href')+'&section=0');
+		}
+
 	}
 
 });
